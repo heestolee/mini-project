@@ -1,4 +1,4 @@
-let user = prompt("가위, 바위, 보 중 하나를 선택하세요");
+
 let com = Math.ceil(Math.random() * 3);
 
     switch (com) {
@@ -16,8 +16,9 @@ let com = Math.ceil(Math.random() * 3);
 
     console.log(com);
 
+function run(user) {
     switch (user) {
-        case '가위' : {
+        case 'scissors' : {
             if ( com === '가위') {
                 document.write("컴퓨터 : 가위, 사용자와 비겼습니다.")
             } else if ( com === '바위') {
@@ -28,7 +29,7 @@ let com = Math.ceil(Math.random() * 3);
         break;
         }
     
-        case '바위' : {
+        case 'rock' : {
             if ( com == '가위') {
                 document.write("컴퓨터 : 가위, 사용자가 이겼습니다.")
             } else if ( com == '바위') {
@@ -39,7 +40,7 @@ let com = Math.ceil(Math.random() * 3);
         break;
         }
     
-        case '보' : {
+        case 'paper' : {
             if ( com == '가위') {
                 document.write("컴퓨터 : 가위, 사용자가 졌습니다.")
             } else if ( com == '바위') {
@@ -49,9 +50,9 @@ let com = Math.ceil(Math.random() * 3);
             }
         break;
         }
-    
-    
-    
-    
-    
     }
+}
+    
+    
+    
+    

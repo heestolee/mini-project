@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 미니 계산기 </h1>
+    <input type="text" id="box1" placeholder="숫자 입력 1" onKeyDown="exceptNum();" value="">
+    <input type="text" id="box2" placeholder="숫자 입력 2" onKeyDown="exceptNum();" value="">
+    <br> <br>
+    <input type="button" value="+" onclick="click_in('+');">
+    <input type="button" value="-" onclick="click_in('-');">
+    <input type="button" value="x" onclick="click_in('*');">
+    <input type="button" value="÷" onclick="click_in('/');">
+    <input type="button" value="AC" onclick="click_in('C');">
+    <br> <br>
+    결과값 : <input id="out1" type="text" readonly="readondl">
+    <script src="test-1.js"></script>
+    <br> <br>
+    <div class="Howtouse">
+        <h2> 사용법 </h2>
+        - 숫자 입력칸에 숫자만 입력해주세요 <br>
+        - '숫자 입력 1'에 '숫자 입력 2'를 연산하는 방식입니다 <br>
+        - 숫자를 입력했다면 =, -, ×, ÷ 중 원하는 연산자를 눌러주세요 <br>
+        - 잘못 입력했다면 AC버튼을 눌러 초기화 해주세요 <br>
+    </div>
+</body>
+</html>
